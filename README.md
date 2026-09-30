@@ -12,6 +12,30 @@
 
 [실험 과정·결과](#original-readme-preserved) · [제출 보고서 PDF](docs/보고서.pdf) · [소스 모음](sources)
 
+## 실제 실행 GIF
+
+원본 C 소스를 Windows에서 컴파일해 서버와 클라이언트를 실행했습니다. 아래 GIF는 실제 콘솔 출력을 16:9 프레임에 배치한 데모입니다.
+
+### TCP 에코 통신
+
+![TCP 서버 연결, 메시지 전송, 에코 응답과 종료](docs/images/tcp-echo-demo.gif)
+
+서버 실행 → 클라이언트 연결 → 메시지 전송 → 에코 응답 → `quit` 종료 흐름입니다.
+
+### UDP 에코 통신
+
+![UDP 메시지 전송, 서버 수신, 에코 응답과 종료](docs/images/udp-echo-demo.gif)
+
+데이터그램 전송과 서버의 응답을 확인할 수 있습니다.
+
+### 전송 속도 실험
+
+![프로토콜과 속도를 선택하고 TCP UDP 5초 전송 결과 확인](docs/images/tcp-udp-throughput-demo.gif)
+
+TCP 500 bytes/sec와 UDP 1,000 bytes/sec를 선택해 각각 5초 동안 전송한 로컬 실행 예시입니다. 화면의 수치는 해당 실행에서 프로그램이 출력한 값입니다.
+
+[빌드·실행 환경](docs/demo-capture.md)
+
 ## 구현 구성
 
 | 프로그램 | 역할 |
